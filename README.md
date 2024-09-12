@@ -18,7 +18,7 @@ The frontend of the app is hosted on Netlify and can be accessed at:
 
 ## Backend Architecture
 
-The backend is hosted on an EC2 instance, using Flask and Nginx with SSL certificates provided by Let's Encrypt to ensure secure communication between the frontend and backend.
+The backend is hosted on an EC2 instance, using Flask as the web framework and Nginx as the reverse proxy server. SSL certificates are provided by Let's Encrypt to ensure secure communication between the frontend and backend. The entire backend is containerized using Docker, ensuring consistent deployment and scalability.
 
 - Backend API Base URL: `https://api.memodrop.net`
 
@@ -53,7 +53,7 @@ The backend is hosted on an EC2 instance, using Flask and Nginx with SSL certifi
    Built with [React](https://reactjs.org/) and deployed on [Netlify](https://www.netlify.com/).
    
 - **Backend**:  
-   The backend is powered by [Flask](https://flask.palletsprojects.com/) and hosted on an AWS EC2 instance.  
+   The backend is powered by [Flask](https://flask.palletsprojects.com/), hosted on an AWS EC2 instance and containerized by Docker
    Nginx is used as the web server to handle the proxy requests between the frontend and backend, with SSL enabled via [Let's Encrypt](https://letsencrypt.org/).
 
 - **Database**:  
